@@ -47,11 +47,11 @@ async function simulateTypingWithMistakes(
                 currentText += mistakenChar;
                 cb(currentText);
 
-                wait(typingSpeed / 1.5);
+                wait(typingSpeed * 1.5);
                 currentText = currentText.slice(0, -1);
                 cb(currentText);
 
-                wait(typingSpeed / 1.5);
+                wait(typingSpeed * 1.5);
                 currentText += currentChar;
                 cb(currentText);
             } else {

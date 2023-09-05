@@ -46,10 +46,10 @@ function simulateTypingWithMistakes(sentence, typingSpeed, mistakeProbability, c
                     const mistakenChar = getRandomChar();
                     currentText += mistakenChar;
                     cb(currentText);
-                    wait(typingSpeed / 1.5);
+                    wait(typingSpeed * 1.5);
                     currentText = currentText.slice(0, -1);
                     cb(currentText);
-                    wait(typingSpeed / 1.5);
+                    wait(typingSpeed * 1.5);
                     currentText += currentChar;
                     cb(currentText);
                 }
