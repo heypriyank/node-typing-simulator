@@ -24,6 +24,7 @@ function simulateTypingWithMistakes(sentence, typingSpeed, mistakeProbability, c
             let currentText = "";
             const typeInterval = setInterval(() => __awaiter(this, void 0, void 0, function* () {
                 if (currentIndex === sentence.length) {
+                    wait(typingSpeed * 4);
                     clearInterval(typeInterval);
                     yield new Promise((resolve) => setTimeout(resolve, typingSpeed));
                     // Simulate erasing

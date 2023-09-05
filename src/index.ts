@@ -18,6 +18,7 @@ async function simulateTypingWithMistakes(
 
         const typeInterval = setInterval(async () => {
             if (currentIndex === sentence.length) {
+                wait(typingSpeed * 4);
                 clearInterval(typeInterval);
                 await new Promise<void>((resolve) =>
                     setTimeout(resolve, typingSpeed)
