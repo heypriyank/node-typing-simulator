@@ -1,0 +1,21 @@
+{
+  "name": "node-typing-simulator",
+  "version": "1.1.0",
+  "description": "Can Simulate typing on a web page",
+  "main": "dist/index.js",
+  "types": "dis/index.d.ts",
+  "files": ["/dist"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heypriyank/node-typing-simulator.git"
+  },
+  "author": "github.com/heypriyank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heypriyank/node-typing-simulator/issues"
+  },
+  "homepage": "https://github.com/heypriyank/node-typing-simulator#readme"
+}
