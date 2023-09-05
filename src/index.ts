@@ -43,6 +43,7 @@ async function simulateTypingWithMistakes(
 
             if (isMistake) {
                 // Simulate a mistake
+                wait(typingSpeed * 1.5);
                 const mistakenChar = getRandomChar();
                 currentText += mistakenChar;
                 cb(currentText);

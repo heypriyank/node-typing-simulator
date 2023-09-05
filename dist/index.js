@@ -43,6 +43,7 @@ function simulateTypingWithMistakes(sentence, typingSpeed, mistakeProbability, c
                 const isMistake = Math.random() < mistakeProbability;
                 if (isMistake) {
                     // Simulate a mistake
+                    wait(typingSpeed * 1.5);
                     const mistakenChar = getRandomChar();
                     currentText += mistakenChar;
                     cb(currentText);
